@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function Calculate(sgpa,k)
+{
+var cgpa = 0.0  //using sgpa,k,cgpa of the outer function
+	function cgpa_c()
+	{
+    	for (var j=1;j<=k;j++)
+    	{
+    	cgpa = cgpa + sgpa[j]
+    	}   	 
+    	cgpa = cgpa/k
+    	alert("CGPA upto Semester "+k+" is : "+cgpa)
+	}
+    	cgpa_c()
+}
+//You may need to add calculation of sgpa by taking marks (Do if asked )
+var k=parseInt(prompt("Number of Semester",1))
+var sgpa = []
+for(var j=1;j<=k;j++)
+{
+	sgpa[j] =parseFloat(prompt("Enter SGPA for " +j,10.0))
+}
+Calculate(sgpa,k)
+</script>
+</head>
+</html>
