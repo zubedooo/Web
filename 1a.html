@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head><script>
+function freq(str)
+{
+var val = {}
+str = str.split("")
+for(var i=0; i<str.length;i++)  {
+a=str[i]
+if(a in val)
+	val[a]++
+else
+	val[a]=1
+}
+//document.write(JSON.stringify(val))
+for (a in val)
+	document.write(a + ": " + val[a] + " <br>" )
+}
+
+</script>
+</head>
+
+<body>
+<script>
+var str = prompt("Enter String..")
+freq(str)
+</script></body></html>
