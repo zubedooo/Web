@@ -1,0 +1,26 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+<body ng-app="">
+
+<form name="myForm">
+Name:
+<input type="text" name="fname" ng-model="fname" required>
+<p ng-show="myForm.fname.$touched && myForm.fname.$invalid">The name is required.
+</p> <br>
+
+Middle Name:
+<input type="text" name="midname" ng-model="midname" ng-minlength="2" required>
+<p ng-show="myForm.midname.$error.minlength">Middle name should have at least 2 characters.</p> <br>
+
+Current Position:
+<input type="text" name="curpos" ng-model="curpos" ng-maxlength="15" required>
+<p ng-show="myForm.curpos.$error.maxlength">Current position should have at most 15 characters.</p> <br>
+
+Mobile Number:
+<input type="text" name="mobno" ng-pattern="/^\+91\d{10}/" ng-model="mobno" ng-maxlength="13"/>
+<p ng-show="myForm.mobno.$error.pattern">Please match pattern +919886992643</p>
+<p ng-show="myForm.mobno.$error.maxlength">Maximum Length exceeded</p>
+
+</form>
+</body>
+</html>
