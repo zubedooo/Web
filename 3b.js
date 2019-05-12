@@ -10,9 +10,9 @@ db.collection('v').insert({party:'congress',vote:0});
 db.collection('v').insert({party:'bjp',vote:0});
 db.collection('v').insert({party:'nota',vote:0});
 
-app.get('/i3b.html', function(req,res)
+app.get('/3b.html', function(req,res)
 {
-res.sendFile(__dirname+'/'+'i3b.html');
+res.sendFile(__dirname+'/'+'3b.html');
 });
 
 app.get('/vote',function(req,res)
