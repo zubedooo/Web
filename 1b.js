@@ -8,9 +8,9 @@ MongoClient.connect("mongodb://127.0.0.1/mydb",function(err,db)
 console.log("we are connected...");
 app.use(express.static('public'));
 
-app.get('/i1b.html', function(req,res)
+app.get('/1b.html', function(req,res)
 {
-res.sendFile(__dirname+'/'+'i1b.html');
+res.sendFile(__dirname+'/'+'1b.html');
 });
 
 app.get('/insert',function(req,res)
