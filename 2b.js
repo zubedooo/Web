@@ -7,7 +7,7 @@ app.use(express.static('public'));
 app.use(expressValidator());
 app.get('/i1b.html', function(req,res)
 {
-res.sendFile(__dirname+'/'+'i1b.html');
+res.sendFile(__dirname+'/'+'2b.html');
 });
 
 app.post('/insert',uep,function(req,res)
