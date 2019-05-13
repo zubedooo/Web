@@ -30,20 +30,20 @@ Hello
 //karnataka.html
 <html>
 <body bgcolor = "blue">
-KARANATAKA - You are now in Hampi xD
+KARANATAKA - You are now in Hampi
 </body>
 </html>
 
 //delhi.html
 <html>
 <body bgcolor = "red">
-DELHI - Welcome to Red Fort :P
+DELHI - Welcome to Red Fort
 </body>
 </html>
 
 //maharashtra.html
 <html>
 <body bgcolor = "yellow">
-MAHARASHTRA i
+MAHARASHTRA - Home of Mumbai Indians
 </body>
 </html>
