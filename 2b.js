@@ -5,7 +5,7 @@ var bodyParser=require('body-parser');
 var uep=bodyParser.urlencoded({extended: false});
 app.use(express.static('public'));  
 app.use(expressValidator());
-app.get('/i1b.html', function(req,res)
+app.get('/2b.html', function(req,res)
 {
 res.sendFile(__dirname+'/'+'2b.html');
 });
